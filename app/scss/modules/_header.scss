@@ -1,0 +1,52 @@
+.header-nav__title, 
+.login__title, 
+.login__slash {
+    @include font-lato(700, 16px, #424551);
+}
+
+.header {
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    width: 619px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav__logo {
+    width: 129px;
+    height: 20px;
+}
+.header-nav__image {
+}
+.header-nav__link {
+}
+
+.header-cta {
+    display: flex;
+    width: 386px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+}
+
+

@@ -1,0 +1,12 @@
+.button-global {
+    width: 206px;
+    height: 52px;
+    border: none;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    cursor: pointer;
+    &__title {
+        @include font-lato(700, 16px, #FFFFFF);
+    }
+}
+
