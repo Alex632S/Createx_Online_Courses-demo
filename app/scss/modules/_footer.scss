@@ -115,3 +115,29 @@
         height: 100%;
     }
 }
+
+.footer-bottom {
+    width: 100%;
+    background: $color-dark-light;
+    .container-flex {
+        height: 58px;
+    }
+}
+.container-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.footer-bottom__title {
+    @include font-lato(400, 12px, $color-light);
+}
+.footer-bottom__img {
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+}
+.footer-bottom__link {
+    @include font-lato(700, 14px, $color-light);
+    text-transform: uppercase;
+    opacity: 0.6;
+}
