@@ -1,0 +1,117 @@
+.footer {
+    width: 100%;
+    background: $color-dark;
+}
+.footer-top {
+    padding: 80px 0 60px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-top-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    .cc-wrap:last-child {
+        justify-content: space-between;
+        align-items: center;
+        width: 244px;
+    }
+}
+.footer-top-column__image {
+    width: 130px;
+    height: 22px;
+}
+.footer-text {
+    @include font-lato(400, 12px, $color-light);
+    line-height: 150%;
+    opacity: 0.6;
+    max-width: 276px;
+    margin: 24px 0 38px 0;
+}
+.cc-footer-flex {
+    width: 244px;
+    display: flex;
+}
+.footer__link,
+.footer-top-column__img {
+    opacity: 0.6;
+}
+.footer__img {
+    width: 24px;
+    height: 24px;
+}
+.footer-top-column__title {
+    @include font-lato(700, 16px, $color-light);
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.footer-top-column__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-top-column__description {
+    @include font-lato(400, 16px, $color-light);
+    opacity: 0.6;
+    margin: 8px 0;
+}
+.footer-top-column__img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.footer-top-column:last-child {
+    .footer-top-column__description {
+        @include font-lato(400, 10px, $color-light);
+        line-height: 150%;
+        max-width: 285px;
+        opacity: 1;
+        margin-top: 12px;
+    }
+    .footer-top-column__title {
+        margin-bottom: 24px;
+    }
+}
+
+.container-input {
+    width: 286px;
+    background: $color-grey-alpha;
+    border: 1px solid $color-grey-alpha;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__add {
+        background: none;
+        border: none;
+        width: 100%;
+        margin: 8px 0 8px 12px;
+        outline:none;
+        caret-color: $color-light;
+        color: $color-light;
+    }
+    &__add::placeholder {
+        @include font-lato(400, 12px, $color-light);
+        line-height: 150%;
+        opacity: 0.6;
+    }
+    &__btn {
+        width: 16px;
+        height: 16px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin: 0 12px 0 5px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
