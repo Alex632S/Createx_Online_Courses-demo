@@ -9,39 +9,29 @@ html(lang="en")
    body.page__body 
       header.header 
          .container 
-            .header-row 
-               //- navigation line (logo and 5 links) 
-               ul.header-nav 
-                  a.header-nav__logo(href="#")
-                     img.header-nav__image(src="./img/Navbar/logo.svg" alt="logo button") 
-                  li 
-                     a.header-nav__link(href="#")
-                        span.header-nav__title About Us
-                  li 
-                     a.header-nav__link(href="#")
-                        span.header-nav__title Courses
-                  li 
-                     a.header-nav__link(href="#")
-                        span.header-nav__title Events
-                  li 
-                     a.header-nav__link(href="#")
-                        span.header-nav__title Blog
-                  li 
-                     a.header-nav__link(href="#")
-                        span.header-nav__title Contacts
-
-               //- registration line (button and 2 links)
-               ul.header-cta 
+            //- navigatioin Header
+            include modules/navigation-line.pug
+         .container.container-flex 
+            .container-column
+               //- container-column(cc)
+               ul.cc-wrap.cc-wrap-flex
                   li
+                     button.header-btn 
+                        img.header-btn__img(src="./img/Button/play.svg" alt="button play")
+                  li
+                     span.header-btn__description Play showreel   
+               .cc-wrap
+                  h1.header-title Enjoy studying with Createx Online Courses
+               ul.cc-wrap.cc-wrap-flex
+                  li 
+                     //- BUTTON opacity
+                     button.button-global-opacity 
+                        span.button-global-opacity__title About us
+                  li 
                      //- BUTTON Red
                      button.button-global 
-                        span.button-global__title Get consultation
-                  li
-                     .login
-                        .login__icon
-                           img(src="./img/Navbar/Profile.svg" alt="login icon")
-                        a.login__link(href="#")
-                           span.login__title Log in
-                        span.login__slash &nbsp;/&nbsp; 
-                        a.login__link(href="#") 
-                           span.login__title Register
+                        span.button-global__title Explore courses
+                        
+            .container-image
+               img(src="./img/Header/illustration.svg" alt="banner") 
+

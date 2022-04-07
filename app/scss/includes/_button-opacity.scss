@@ -1,0 +1,11 @@
+.button-global-opacity {
+    height: 52px;
+    padding: 0 40px;
+    border: 1px solid #F75E05;
+    background: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &__title {
+        @include font-lato(700, 16px, #F75E05);
+    }
+}
