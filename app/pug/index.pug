@@ -8,30 +8,104 @@ html(lang="en")
       title Createx Online Courses
    body.page__body 
       header.header 
-         .container 
-            //- navigatioin Header
-            include modules/navigation-line.pug
-         .container.container-flex 
-            .container-column
-               //- container-column(cc)
-               ul.cc-wrap.cc-wrap-flex
-                  li
-                     button.header-btn 
-                        img.header-btn__img(src="./img/Button/play.svg" alt="button play")
-                  li
-                     span.header-btn__description Play showreel   
-               .cc-wrap
-                  h1.header-title Enjoy studying with Createx Online Courses
-               ul.cc-wrap.cc-wrap-flex
+         //- navigatioin Header
+         include modules/navigation-line.pug
+
+         //- header middle block   
+         include modules/header-middle.pug
+
+         //- header bottom block   
+         include modules/header-bottom.pug
+
+      footer.footer 
+         .container
+            .footer-top 
+               .footer-top-column
+                  .cc-wrap
+                     a.footer-top-column__title(href="#")
+                        img.footer-top-column__image(src="./img/Footer/logo.svg" alt="logo button")
+                  .cc-wrap
+                     p.footer-text Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.
+                  ul.cc-wrap.cc-footer-flex 
+                     li
+                        a.footer__link(href="#")  
+                           img.footer__img(src="./img/Footer/facebook.svg" alt="facebook")
+                     li
+                        a.footer__link(href="#")  
+                           img.footer__img(src="./img/Footer/twitter.svg" alt="twitter")
+                     li
+                        a.footer__link(href="#")  
+                           img.footer__img(src="./img/Footer/youtube.svg" alt="youtube")
+                     li
+                        a.footer__link(href="#")  
+                           img.footer__img(src="./img/Footer/telegram.svg" alt="telegram")
+                     li
+                        a.footer__link(href="#")  
+                           img.footer__img(src="./img/Footer/instagram.svg" alt="instagram")
+                     li
+                        a.footer__link(href="#")  
+                           img.footer__img(src="./img/Footer/linkedin.svg" alt="linkedin")
+               ul.footer-top-column
                   li 
-                     //- BUTTON opacity
-                     button.button-global-opacity 
-                        span.button-global-opacity__title About us
+                     h6.footer-top-column__title Site Map
                   li 
-                     //- BUTTON Red
-                     button.button-global 
-                        span.button-global__title Explore courses
-                        
-            .container-image
-               img(src="./img/Header/illustration.svg" alt="banner") 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description About Us    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Courses    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Events    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Blog    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Contacts    
+               ul.footer-top-column
+                  li 
+                     h6.footer-top-column__title COURSES
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Marketing    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Management    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description HR & Recruting    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Design    
+                  li 
+                     a.footer-top-column__link(href="#")
+                        span.footer-top-column__description Development    
+               ul.footer-top-column
+                  li 
+                     h6.footer-top-column__title CONTACT US
+                  li 
+                     a.footer-top-column__link(href="tel: 4055550128")
+                        img.footer-top-column__img(src="./img/Footer/iPhone.svg" alt="phone")
+                        span.footer-top-column__description (405) 555-0128    
+                  li 
+                     a.footer-top-column__link(href="mailto: hello@createx.com")
+                        img.footer-top-column__img(src="./img/Footer/Mail.svg" alt="mail")
+                        span.footer-top-column__description hello@createx.com    
+               ul.footer-top-column
+                  li 
+                     h6.footer-top-column__title SIGN UP TO OUR NEWSLETTER
+                  li 
+                     .container-input 
+                        input.container-input__add(type="text" placeholder="Email address")
+                        button.container-input__btn(type="button")
+                           img.container-input__img(src="./img/Input/Right.svg" alt="arrow")
+                  li 
+                     p.footer-top-column__description *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.    
+            .footer-bottom
+
+
+         
+
+
 

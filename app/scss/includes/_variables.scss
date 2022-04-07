@@ -1,5 +1,13 @@
 $max-width: 1920px;
 
+$color-light: #FFFFFF;
+$color-red-orange:#FEDECF;
+$color-red-orange-dark:#FEC8C1;
+$color-red-light: #FF3F3A;
+$color-red-light-05: #F75E05;
+$color-dark: #1E212C;
+$color-grey-dark: #424551;
+$color-grey-alpha: rgba(255, 255, 255, 0.2);
 
 @mixin responsive-font($pc-size, $mob-size) {
     $add-size: $pc-size - $mob-size;

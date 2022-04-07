@@ -1,10 +1,13 @@
 /* Normalize */
 @import 'normalize.css/normalize';
 
+/* includes */
 @import 'includes/variables';
 @import 'includes/fonts';
 @import 'includes/global';
 @import 'includes/button-red';
 @import 'includes/button-opacity';
 
+/* modules */
 @import 'modules/header';
+@import 'modules/footer';
