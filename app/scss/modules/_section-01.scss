@@ -1,13 +1,14 @@
 .section-01 {
     width: 100%;
     padding: 180px 0;
-    align-items: flex-start;
 
     background-image: url(../img/section-01/dots.png);
     background-position: 0 240px;
     background-repeat: no-repeat;
     background-size: auto;
-
+    .container-flex-start {
+        align-items: flex-start;
+    }
     .cc-wrap-flex {
         display: flex;
         flex-direction: column;
@@ -27,15 +28,15 @@
     .footer-top-column__link {
         margin-top: 12px;
     }
-    .section-01-cc__title {
-        @include font-lato(700, 16px, $color-dark);
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 23px;
+    
+    .section-01-cc-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .section-01-cc__decription {
-        @include font-lato(900, 46px, $color-dark);
-        margin-bottom: 46px;
+    .section-01-cc__img {
+        width: 16px;
+        height: 16px;
     }
     .section-01-cc__text {
         margin-left: 16px;
@@ -45,4 +46,15 @@
     .button-global-margin {
         margin-top: 26px;
     }
+}
+
+.section-01-cc__title {
+    @include font-lato(700, 16px, $color-dark);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+.section-01-cc__decription {
+    @include font-lato(900, 46px, $color-dark);
+    margin-bottom: 46px;
 }

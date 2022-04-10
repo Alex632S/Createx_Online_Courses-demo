@@ -1,0 +1,59 @@
+.card-section-02 {
+    width: 600px;
+    display: flex;
+}
+.image-card {
+    &__img {
+        width: 214px;
+        height: 214px;
+    }
+}
+.content-card {
+    border: 1px solid $color-grey-light;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    width: 396px;
+    height: 214px;
+    padding: 32px 0 0 32px;
+    &__mark {
+        display: inline-block;
+        padding: 1px 8px;
+        line-height: 150%;
+        @include font-lato(400, 14px, $color-light);
+        border-radius: 4px;
+    }
+    
+    &__description {
+        @include font-lato(700, 20px, $color-dark);
+        line-height: 150%;
+        margin: 20px 0;
+        max-width: 322px;
+    }
+   
+}
+.content-cost {
+    &__value {
+        @include font-lato(700, 18px, $color-red-light-02);
+    }
+    &__description {
+        @include font-lato(400, 18px, $color-grey-dark-02);
+    }
+}
+.content-cost-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* colors by mark */
+.content-card__blue-light {
+    background: $color-blue-light;
+}
+.content-card__mark-blue {
+    background: $color-blue;
+}
+.content-card__mark-orange {
+    background: $color-orange;
+}
+.content-card__mark-red-02 {
+    background: $color-red-02;
+}

@@ -1,14 +1,22 @@
 $max-width: 1920px;
 
-$color-light: #FFFFFF;
+$color-light:#FFFFFF;
+$color-blue-light:#03CEA4;
+$color-blue:#5A87FC;
+$color-orange:#F89828;
+$color-red-02:#F52F6E;
 $color-red-orange:#FEDECF;
 $color-red-orange-dark:#FEC8C1;
-$color-red-light: #FF3F3A;
-$color-red-light-05: #F75E05;
+$color-red-light:#FF3F3A;
+$color-red-light-02:#FF4242;
+$color-red-light-05:#F75E05;
 $color-dark: #1E212C;
-$color-dark-light: #292C37;
-$color-grey-dark: #424551;
-$color-grey-alpha: rgba(255, 255, 255, 0.2);
+$color-dark-light:#292C37;
+$color-grey-light:#E5E8ED;
+$color-grey-dark:#424551;
+$color-grey-dark-02:#787A80;
+$color-grey-alpha:rgba(255, 255, 255, 0.2);
+
 
 @mixin responsive-font($pc-size, $mob-size) {
     $add-size: $pc-size - $mob-size;
