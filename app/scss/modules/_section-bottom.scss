@@ -1,0 +1,35 @@
+.section-bottom {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 180px;
+    background-color: $color-red-orange;
+    background-image: url(../img/section-bottom/bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    .section-01-cc__decription {
+        max-width: 810px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-form {
+        padding-top: 14px;
+        margin: 0 auto;
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-form__input {
+        margin-right: 24px;
+        width: 100%;
+        height: 52px;
+        outline:none;
+    }
+    .container-form__input::placeholder {
+        @include font-lato(400, 16px, $color-grey-dark-03);
+    }
+    .container-form__input[type="text"] {
+        padding-left: 16px;
+    }
+}
