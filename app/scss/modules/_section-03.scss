@@ -1,0 +1,77 @@
+.list-categorys {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+.container-column-center {
+    * {
+        text-align: center;
+    }
+}
+
+.list-categorys__btn {
+    border: none;
+    background: none;
+    width: 307px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-categorys__btn-active {
+    border: 1px solid $color-red-light;
+    border-radius: 4px;
+    .list-categorys__description {
+        color: $color-red-light;
+    }
+}
+.list-categorys__star::before {
+    content: url(../img/section-03/red-star.svg);
+}
+.list-categorys__support::before{
+    content: url(../img/section-03/grey-like.svg);
+}
+.list-categorys__library::before {
+    content: url(../img/section-03/grey-layouts.svg);
+}
+.list-categorys__community::before {
+    content: url(../img/section-03/grey-chat.svg);
+}
+
+.list-categorys__star::before,
+.list-categorys__support::before,
+.list-categorys__library::before,
+.list-categorys__community::before {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.list-categorys__description {
+    cursor: pointer;
+    display: flex;
+    @include font-lato(700, 16px, $color-grey-dark-03);
+}
+
+.section-03-bottom {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.container-description__title {
+    @include font-lato(900, 32px, $color-dark);
+    line-height: 130%;
+}
+.container-description__text {
+    max-width: 495px;
+    margin-top: 24px;
+    @include font-lato(400, 16px, $color-dark);
+    line-height: 160%;
+    text-align: start;
+}
+
+.container-image__img {
+    width: 600px;
+    height: 440px;
+}
