@@ -1,0 +1,54 @@
+.section-04 {
+    padding: 80px 0;
+    background-color: $color-red-orange;
+    .container {
+        padding-top: 14px;   
+    }
+}
+.card-date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-light;
+    border-radius: 4px;
+    padding: 0 40px;
+}
+.card-date:not(:first-child) {
+    margin-top: 24px;
+}
+.card-date-head {
+    display: flex;
+    align-items: center;
+}
+.card-date-head__day {
+    margin-right: 20px;
+    @include font-lato(900, 48px, $color-red-light);
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+.card-date-head__month,
+.card-date-middle__title  {
+    @include font-lato(700, 20px, $color-dark);
+    line-height: 150%;
+}
+.card-date-head__time,
+.card-date-middle__subtitle {
+    @include font-lato(400, 16px, $color-grey-dark-02);
+    line-height: 160%;
+}
+.card-date-middle {
+    padding-top: 32px;
+    padding-bottom: 34px;
+    width: 757px;
+}
+.section-04-row {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-04-row__title {
+    margin-right: 40px;
+    @include font-lato(700, 28px, $color-dark);
+}
