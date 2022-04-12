@@ -1,0 +1,25 @@
+.section-05 {
+    padding: 120px 0;
+    .container-flex {
+        align-items: start;
+    }
+    .container-column {
+        max-width: 392px;
+    }
+    &__description {
+        padding-top: 2px;
+        @include font-lato(400, 16px, $color-grey-dark);
+        line-height: 160%;
+    }
+    .container-flex-padding {
+        padding-top: 32px;
+    }
+    .section-05__img {
+        width: 103px;
+        height: 31px;
+    }
+    .section-05-image__img {
+        width: 715px;
+        height: 508px;
+    }
+}

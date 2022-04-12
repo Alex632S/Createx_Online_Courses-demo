@@ -36,6 +36,7 @@
 .card-date-middle__subtitle {
     @include font-lato(400, 16px, $color-grey-dark-02);
     line-height: 160%;
+    margin-top: 4px;
 }
 .card-date-middle {
     padding-top: 32px;
