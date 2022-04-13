@@ -1,0 +1,134 @@
+.blog {
+    padding-top: 120px;
+    padding-bottom: 180px;
+    .footer-top-column__link {
+        justify-content: space-between;
+    }
+}
+
+.heading {
+    width: 390px;
+}
+.heading-01 {
+    .heading-header {
+        background-image: url(../img/blog/image-01.jpg);
+    }
+}
+.heading-02 {
+    .heading-header {
+        background-image: url(../img/blog/image-02.jpg);
+    }
+}
+.heading-03 {
+    .heading-header {
+        background-image: url(../img/blog/image-03.jpg);
+    }
+}
+.heading-header {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 4px;
+}
+.heading-header__btn {
+    background-color: $color-light;
+    padding: 3.5px 8px 0px 8px;
+    border: none;
+    border-radius: 4px;
+    margin: 12px;
+    cursor: pointer;
+}
+.heading-header__description {
+    @include font-lato(400, 14px, $color-grey-dark);
+    line-height: 150%;
+
+    display: flex;
+}
+
+.heading-01 {
+    .heading-header__description::before {
+        content: url(../img/blog/mic.svg);
+    }
+}
+.heading-02 {
+    .heading-header__description::before {
+        content: url(../img/blog/play.svg);
+    }
+}
+.heading-03 {
+    .heading-header__description::before {
+        content: url(../img/blog/files.svg);
+    }
+}
+
+.heading-header__description::before {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+.heading-middle {
+    justify-content: start;
+    margin-top: 16px;
+    * {
+        @include font-lato(400, 14px, $color-grey-dark-02);
+        line-height: 150%;
+    }
+}
+.heading-middle__title {
+    font-weight: 700;
+}
+.heading-middle__line {
+    margin: 0 12px;
+}
+.heading-middle__description,
+.heading-middle__time {
+    display: flex;
+}
+.heading-middle__description::before {
+    content: url(../img/blog/calendar.svg);
+}
+.heading-middle__time::before {
+    content: url(../img/blog/clock.svg);
+}
+.heading-middle__description::before,
+.heading-middle__time::before {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.heading-footer {
+    .container-flex {
+        margin-top: 16px;
+        justify-content: start;
+    }
+}
+.heading-footer__title {
+    margin-top: 8px;
+    @include font-lato(700, 20px, $color-dark);
+    line-height: 150%;
+}
+.heading-footer__text {
+    margin-top: 8px;
+    @include font-lato(400, 16px, $color-grey-dark);
+    line-height: 160%;
+}
+
+.heading-footer__description {
+    @include font-lato(700, 16px, $color-dark);
+    line-height: 160%;
+}
+.heading-footer__btn {
+    margin-left: 8px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.heading-footer__img {
+    width: 24px;
+    height: 24px;
+}
