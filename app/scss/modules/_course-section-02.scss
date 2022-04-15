@@ -1,0 +1,79 @@
+.course-section-02 {
+    padding-top: 82px;
+    padding-bottom: 82px;
+    .container-flex {
+        align-items: start;
+    }
+    .container-column {
+        padding-top: 20px;
+    }
+}
+.course-section-02-image__img {
+    width: 495px;
+    height: 600px;
+}
+.course-section-02-description {
+    max-width: 600px;
+}
+.course-section-02-description-title {
+    @include font-lato(700, 16px, $color-dark);
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.course-section-02-description-subtitle {
+    @include font-lato(900, 46px, $color-dark);
+    line-height: 130%;
+    margin-top: 8px;
+}
+.course-section-02-description-description {
+    @include font-lato(400, 20px, $color-grey-dark-02);
+    line-height: 150%;
+    margin-top: 16px;
+}
+.list-stat {
+    margin-top: 32px;
+    li:not(:first-child) {
+        .list-stat__item {
+            margin-top: 4px;
+        }
+    }
+}
+.list-stat__item {
+    @include font-lato(700, 16px, $color-grey-dark);
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+}
+.list-stat__item-star::before {
+    content: url(../img/course-section-02/star.svg);
+}
+.list-stat__item-play::before {
+    content: url(../img/course-section-02/vector.svg);
+}
+.list-stat__item-person::before {
+    content: url(../img/course-section-02/profile.svg);
+}
+
+.list-stat__item::before {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course-section-02-description__text {
+    margin-top: 32px;
+    @include font-lato(400, 16px, $color-grey-dark);
+    line-height: 160%;
+
+}
+.course-section-02-links {
+    margin-top: 40px;
+    width: 168px;
+}
+.course-section-02-links__item {
+    width: 24px;
+    height: 24px;
+}
