@@ -88,18 +88,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+   
     &__add {
         background: none;
         border: none;
         width: 100%;
         margin: 8px 0 8px 12px;
         outline:none;
-        caret-color: $color-light;
-        color: $color-light;
     }
     &__add::placeholder {
         @include font-lato(400, 12px, $color-light);
         line-height: 150%;
+        opacity: 0.6;
+    }
+    &__add[type="text"] {
+        @include font-lato(400, 12px, $color-light);
         opacity: 0.6;
     }
     &__btn {

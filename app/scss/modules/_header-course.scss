@@ -1,0 +1,13 @@
+.header-course {
+    background-image: url(../img/header-course/background.png);
+    background-size: auto;
+    background-position: center bottom;
+    .container-column {
+        padding: 120px 0;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+    .section-01-cc__title {
+        color: $color-red-light;
+    }
+}

@@ -1,0 +1,131 @@
+/* page 2 */
+.courses {
+    padding-bottom: 120px;
+    .section-01-cc__decription {
+        margin-bottom: 0px;
+    }
+}
+.container-column {
+}
+.container-column-center {
+}
+.courses-navigation {
+    margin: 60px 0;
+}
+.courses-categories {
+    width: 813px;
+}
+.courses-categories__btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.courses-categories__description {
+    @include font-lato(700, 16px, $color-grey-dark-03);
+    line-height: 160%;
+}
+
+/* red directory */
+.courses {
+    li:first-child {
+        .courses-categories__btn {
+            cursor: auto;
+        }
+        .container-border {
+            border: 1px solid $color-red-light;
+            border-radius: 4px;
+            padding: 10px 20px;
+            * {
+                color: $color-red-light;
+            }
+        }
+    }
+}
+
+.courses-categories__description::after {
+    content: "17";
+    margin-left: 4px;
+    @include font-lato(900, 10px, inherit);
+    line-height: 150%;
+    position: relative;
+    top: -6px;
+}
+
+.categories-search {
+    border: 1px solid $color-grey-dark-04;
+    border-radius: 4px;
+    
+    width: 315px;
+    display: flex;
+    align-items: center;
+}
+.categories-search__input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.categories-search__input::placeholder{
+    @include font-lato(400, 14px, $color-grey-dark-03);
+    line-height: 150%;
+}
+.categories-search__input[type="text"] {
+    @include font-lato(400, 14px, $color-grey-dark-03);
+    padding-left: 16px;
+}
+.categories-search__btn {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 16px 14px 8px;
+    cursor: pointer;
+}
+.categories-search__img {
+    width: 16px;
+    height: 16px
+}
+
+.courses {
+    .image-card {
+        width: 100%;
+        height: 240px;
+    }
+    .image-card__img {
+        width: 100%;
+        height: 100%;
+    }
+    .card-section-02 {
+        flex-direction: column;
+        align-items: center;
+        width: 390px;
+    }
+    .content-card {
+        border-top: none;
+        width: 100%;
+    }
+    .container-row-padding {
+        padding-top: 30px;
+    }
+}
+
+.show-button {
+    margin-top: 80px;
+    width: 100%;
+    &__btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        background: none;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+    &__descriotion {
+        @include font-lato(700, 16px, $color-grey-dark);
+    }
+}

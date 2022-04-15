@@ -1,0 +1,67 @@
+.sourse-section-01 {
+    padding-top: 120px;
+    padding-bottom: 114px;
+    .container-description__title {
+        @include font-lato(900, 46px, $color-dark);
+        margin-bottom: 40px;
+    }
+    .container-description__text {
+        max-width: 600px;
+    }
+    .section-01-cc__decription {
+        @include font-lato(700, 28px, $color-dark);
+        margin-top: 48px;
+        margin-bottom: 24px;
+    }
+    .section-01-cc {
+        li:not(:first-child) {
+            .footer-top-column__link {
+                margin-top: 4px;
+            }
+        }
+    } 
+    .section-01-cc__text {
+        @include font-lato(400, 16px, $color-dark);
+        line-height: 160%;
+    }
+    .footer-top-column__link {
+        display: flex;
+        align-items: center;
+    }
+    .section-01-cc-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 16px;
+    }
+}
+
+.course-card {
+    width: calc(431px + 64px);
+    padding: 40px 32px;
+    border: 1px solid $color-grey-light;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    &-wrap:not(:first-child) {
+        margin-top: 32px;
+    }
+    &__title {
+        @include font-lato(700, 14px, $color-dark);
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+    &__date {
+        @include font-lato(700, 24px, $color-red-light);
+        margin-top: 4px;
+        line-height: 150%;
+    }
+    &__description {
+        @include font-lato(400, 16px, $color-grey-dark-02);
+        line-height: 160%;
+        margin-top: 8px;
+    }
+    .button-global {
+        margin-top: 40px;
+        width: 100%;
+    }
+}

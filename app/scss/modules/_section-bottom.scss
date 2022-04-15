@@ -32,6 +32,7 @@
         @include font-lato(400, 16px, $color-grey-dark-03);
     }
     .container-form__input[type="text"] {
+        @include font-lato(400, 16px, $color-grey-dark-03);
         padding-left: 16px;
     }
 }
