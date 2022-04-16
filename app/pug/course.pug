@@ -10,23 +10,39 @@ html(lang="en")
       link(rel="manifest" href="./img/favicon_io/site.webmanifest")
       link(rel="stylesheet" href="./css/style.min.css")
       title Createx Online Courses
-   //- ABOUT PAGE
+   //- COURSE PAGE
    body.page__body 
-        header.menu-wrap
+        header.header.header-course
             //- navigatioin header
             include modules/navigation-line.pug
 
-        //- section-01 block
-        include modules/courses.pug
+            .container-column.container-column-center
+                h5.section-01-cc__title course
+                p.section-01-cc__decription User Experience. Principles of Human-Centered Design
 
-        //- slider block
-        include modules/slider.pug
+        //- course-section-01
+        include modules/course-section-01.pug
+       
+        //- course-section-02
+        include modules/course-section-02.pug
 
-        //- section-05 block
-        include modules/section-05.pug
+        //- course-section-03
+        include modules/course-section-03.pug
 
-        //- section-bottom block
-        include modules/section-bottom.pug
+        //- course-discount
+        include modules/course-discount.pug
+
+        //- slider-single
+        include modules/slider-single.pug
+
+        //- course-dou
+        include modules/course-duo.pug
         
+        //- course-slider
+        include modules/course-slider.pug
+        
+
         //- footer
         include modules/footer.pug
+
+

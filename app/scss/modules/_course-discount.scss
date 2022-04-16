@@ -1,0 +1,37 @@
+.course-discout {
+    padding-bottom: 90px;
+}
+.discout {
+    background-color: $color-red-orange;
+    padding: 48px 60px;
+    border-radius: 4px;
+    .discout__title {
+        @include font-lato(900, 32px, $color-dark);
+        line-height: 130%;
+    }
+    .container-date {
+        width: 182px;
+    }
+    .discout__num {
+        @include font-lato(700, 20px, $color-dark);
+        line-height: 130%;
+        margin-bottom: 4px;
+    }
+    .discout__text {
+        @include font-lato(400, 12px, $color-dark);
+        line-height: 130%;
+    }
+    .discout-form {
+        margin-top: 24px;
+        align-items: end;
+    }
+    .course-duo-form {
+    }
+    .course-duo-form-wrap {
+        width: 291px;
+        margin: 0;
+    }
+    .button-global {
+        margin: 0;
+    }
+}

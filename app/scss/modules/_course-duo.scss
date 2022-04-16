@@ -1,0 +1,39 @@
+.course-duo {
+    background: $color-grey-light-02;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.course-duo-image__img {
+    width: 550px;
+    height: 502px;
+}
+.course-duo-form {
+    width: 495px;
+    .button-global {
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+.course-duo-form__title {
+    @include font-lato(400, 16px, $color-grey-dark);
+    line-height: 160%;
+    margin-bottom: 8px;
+}
+.space-input {
+    width: 100%;
+    height: 52px;
+    background: $color-light;
+    border: 1px solid $color-grey-dark-04;
+    border-radius: 4px;
+    outline: none;
+}
+.space-input[type="text"] {
+    padding-left: 16px;
+    @include font-lato(400, 16px, $color-grey-dark-03);
+}
+.space-input::placeholder {
+    @include font-lato(400, 16px, $color-grey-dark-03);
+}
+.course-duo-form-wrap-margin {
+    margin-top: 24px;
+}
