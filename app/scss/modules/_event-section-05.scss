@@ -1,0 +1,83 @@
+.event-section-05 {
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+.card-docard {
+  //  background-color: $color-red-orange;
+    background: url(../img/event-section-04/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 60px 103px;
+    border-radius: 4px;
+}
+.card-docard-content {
+    width: 600px;
+}
+.card-docard-content__title {
+    @include font-lato(900, 32px, $color-dark);
+    line-height: 130%;
+}
+.container-form {
+    margin: 48px 0 24px 0; 
+}
+.container-form__input::placeholder {
+    @include font-lato(400, 16px, $color-grey-dark-03);
+}
+.container-form__input[type="text"] {
+    @include font-lato(400, 16px, $color-grey-dark-03);
+    padding-left: 16px;
+}
+.container-form__input {
+    height: 52px;
+    width: 422px;
+    border: 1px solid $color-grey-dark-04;
+    border-radius: 4px;
+    margin-right: 24px;
+    outline: none;
+}
+.card-docard-content__label {
+    @include font-lato(400, 16px, $color-grey-dark);
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $color-red-light;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    border-radius: 0.25em;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $color-red-light;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+  .custom-checkbox:checked+label::before {
+    background-image: url(../img/event-section-04/checked.svg);
+  }

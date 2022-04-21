@@ -11,27 +11,14 @@ html(lang="en")
       link(rel="manifest" href="./img/favicon_io/site.webmanifest")
       link(rel="stylesheet" href="./css/style.min.css")
       title Createx Online Courses
-   
-   body.page__body 
-        header.header.header-course
+
+   body.page__body
+        header.menu-wrap
             //- navigatioin header
             include modules/navigation-line.pug
 
-            .container-column.container-column-center
-                h5.section-01-cc__title Online lecture
-                p.section-01-cc__decription Formation of the organizational structure of the company in the face of uncertainty
-
-        //- event-section-02
-        include event/event-section-02.pug
-       
-        //- event-section-03
-        include event/event-section-03.pug
-
-        //- event-section-04
-        include event/event-section-04.pug
-
-        //- event-section-05
-        include event/event-section-05.pug
+        //- section-01 block
+        include event/event-section-01.pug
 
         //- section-bottom block
         include modules/section-bottom.pug

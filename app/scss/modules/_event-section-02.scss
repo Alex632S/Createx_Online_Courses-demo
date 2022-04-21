@@ -1,0 +1,36 @@
+.section-event {
+    .container-flex {
+        align-items: start;
+    }
+    .content-course {
+        max-width: 600px;
+    }
+    .container-description__text {
+        margin-left: 40px;
+    }
+    .section-01-cc__text {
+        @include font-lato(400, 20px, $color-dark);
+        line-height: 150%;
+    }
+    .section-01-cc__inner {
+        @include font-lato(400, 20px, $color-red-light);
+        margin-right: 8px;
+    }
+    .course-card {
+
+        .course-card-wrap:nth-child(3) {
+            * {
+                color: $color-red-light;
+            }
+        }
+    }
+    .section-01-cc {
+
+        li:not(:first-child) {
+            .footer-top-column__link {
+                margin-top: 24px;
+            }
+        }
+    }
+
+}

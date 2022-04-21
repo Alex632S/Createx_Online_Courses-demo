@@ -1,0 +1,27 @@
+.event-section-04 {
+    padding-bottom: 52px;
+    .section-01-cc {
+        width: 584px;
+    }
+    .section-01-cc__decription {
+        width: 495px;
+    }
+    .section-01-cc__img {
+        margin-right: 16px;
+    }
+    li:not(:first-child) {
+        .footer-top-column__link {
+            margin-top: 20px;
+        }
+    }
+    .footer-top-column__link {
+        align-items: flex-start;
+    }
+    .section-01-cc__text {
+        @include font-lato(700, 20px, $color-grey-dark);
+        line-height: 150%;
+    }
+    .section-01-cc-inner {
+        margin-top: 7px;
+    }
+}
