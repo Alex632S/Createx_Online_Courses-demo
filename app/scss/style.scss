@@ -1,5 +1,8 @@
-/* Normalize */
+/* normalize */
 @import 'normalize.css/normalize';
+
+/* constructor*/
+@import 'constructor/constructor-flex';
 
 /* includes */
 @import 'includes/variables';
@@ -38,3 +41,9 @@
 @import 'modules/event-section-03';
 @import 'modules/event-section-04';
 @import 'modules/event-section-05';
+
+/* PAGE BLOG */
+@import 'modules/blog-section-01';
+
+/* PAGE CONTACTS */
+@import 'modules/contacts-section-01';

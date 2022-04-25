@@ -1,0 +1,91 @@
+/* Constructor flex */
+
+/* 
+    The first character after the double underscore is the justify-content;
+    The second character after the bash is the align-items;
+    Exemple:
+        .constructor-flex__<justify content>-<align items>
+*/
+
+
+/* align items: flex start - is constant */
+.constructor-flex__s-s {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.constructor-flex__e-s {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.constructor-flex__sb-s {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.constructor-flex__sa-s {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* align items: center - is constant */
+.constructor-flex__s-c {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.constructor-flex__e-c {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.constructor-flex__c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.constructor-flex__sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.constructor-flex__sa-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* align items: flex end - is constant */
+.constructor-flex__s-e {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.constructor-flex__e-e {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.constructor-flex__sb-e {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.constructor-flex__sa-e {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* constructor with single parameter */
+.constructor__row {
+    flex-direction: row;
+}
+.constructor__column {
+    flex-direction: column;
+}
+.constructor__wrap {
+    flex-wrap: wrap;
+}

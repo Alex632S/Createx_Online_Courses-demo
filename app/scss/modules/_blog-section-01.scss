@@ -1,0 +1,215 @@
+.blog {
+    .cell {
+        width: 100%;
+    }
+    .container-flex {
+        align-items: start;
+    }
+}
+
+.blog-content {
+    max-width: 810px;
+    padding-bottom: 120px;
+
+    .title {
+        @include font-lato(900, 46px, $color-dark);
+        line-height: 130%;
+        margin-top: 12px;
+    }
+    .blog-content__text {
+        margin-top: 24px;
+        @include font-lato(400, 16px, $color-grey-dark);
+        line-height: 160%;
+    }
+    .blog-content__text-bold {
+        @include font-lato(700, 20px, $color-grey-dark);
+        line-height: 160%;
+    }
+}
+
+.blog-share {
+    .blog-date {
+        gap: 24px;
+    }
+    .blog-date__box {
+        gap: 8px;
+    }
+    .blog-date__decription {
+        @include font-lato(400, 16px, $color-grey-dark-02);
+        line-height: 130%;
+    }
+    
+    
+    .links {
+        margin-top: 26px;
+        gap: 12px;
+        .links__description {
+            @include font-lato(700, 16px, $color-dark);
+            line-height: 130%;
+        }
+        .links__item {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.poster {
+    margin-top: 40px;
+    margin-bottom: 36px;
+    width: 100%;
+    height: 380px;
+    background: url(../img/blog/poster.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+.blog-padding {
+    padding: 0;
+}
+.nav-bar {
+    width: 342px;
+}
+
+.author-wrap,
+.tags {
+    margin-top: 60px;
+}
+.author-wrap__title,
+.trending__title,
+.tags__title {
+    @include font-lato(700, 16px, $color-dark);
+    text-transform: uppercase;
+    line-height: 150%;
+}
+.author {
+    margin-top: 24px;
+    gap: 20px;
+    justify-content: start;
+}
+.author__img {
+    width: 100px;
+    height: 100px;
+}
+
+.author__title {
+    @include font-lato(700, 20px, $color-dark);
+    line-height: 150%;
+}
+.author__description {
+    margin: 4px 0 20px 0;
+    @include font-lato(400, 14px, $color-grey-dark-02);
+}
+.box-footer {
+    width: 85px;
+}
+
+.box-footer__img {
+    width: 20px;
+    height: 20px;
+}
+.trending {
+    margin-top: 24px;
+
+}
+.trending__title {
+    line-height:  150%;
+}
+.trending-content-header {
+    margin-bottom: 4px;
+    @include font-lato(400, 14px, $color-grey-dark-02);
+}
+.box-trending {
+    margin-top: 24px;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+}
+
+.trending-content-header {
+    gap: 8px;
+    justify-content: start;
+}
+
+.trending-content__text {
+    @include font-lato(700, 16px, $color-dark);
+    line-height: 160%;
+}
+
+.tags-wrap {
+    margin-top: calc(24px - 17px);
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin-top: 17px;
+    padding: 6px 16px;
+    border: 1px solid $color-grey-dark-04;
+    border-radius: 4px;
+}
+.tag__text {
+    @include font-lato(700, 14px, $color-grey-dark-02);
+    line-height: 150%;
+}
+
+.article {
+    .article__link:nth-child(1) {
+        gap: 8px;
+        .article__description {
+            @include font-lato(400, 16px, $color-grey-dark);
+            line-height: 160%;
+        }
+    }
+    .article__link:nth-child(3) {
+        .article__description {
+            @include font-lato(700, 16px, $color-red-light);
+            line-height: 160%;
+        }
+    }
+    .srticle__line {
+        margin: 0 12px;
+        color: $color-grey-dark;
+    }
+}
+.quote {
+    margin-top: 48px;
+    .quote__img {
+        margin-right: 30px;
+    }
+}
+
+.list-blog-bullet {
+    margin-top: 24px;
+    .section-01-cc-inner {
+        margin-right: 20px;
+    }
+    .sectisn-01-cc__text {
+        @include font-lato(400, 16px ,$color-grey-dark);
+        line-height: 160%;
+    }
+}
+.box-tages {
+    .tags-wrap {
+        gap: 12px;
+    }
+    .constructor-flex__s-c {
+    }
+    .box-tages__span {
+        @include font-lato(700, 16px , $color-dark);
+        line-height: 160%;
+    }
+    .tag {
+        margin: 0;
+    }
+}
+.blog-content-duo {
+    margin-top: 63px;
+    .links {
+        gap: 12px;
+    }
+    .links__description {
+        @include font-lato(700, 16px , $color-dark);
+        line-height: 160%;
+    }
+}
+
