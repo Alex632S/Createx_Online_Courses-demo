@@ -23,3 +23,12 @@
         height: 508px;
     }
 }
+
+@media screen and (max-width: 760px){
+    .section-05 {
+        .section-05-image__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

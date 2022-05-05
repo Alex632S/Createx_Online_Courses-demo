@@ -1,38 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head class="page__head">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>Createx Online Courses</title>
-  </head>
+  <?php
+    include('head.php');
+  ?>
   <body class="page__body"> 
     <header class="header"> 
       <div class="container">
-        <div class="header-row"> 
-          <ul class="header-nav"> <a class="header-nav__logo" href="#"><img class="header-nav__image" src="./img/navbar/logo.svg" alt="logo button"></a>
-            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">About Us</span></a></li>
-            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Courses</span></a></li>
-            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Events</span></a></li>
-            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Blog</span></a></li>
-            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Contacts</span></a></li>
-          </ul>
-          <ul class="header-cta"> 
-            <li>
-              <button class="button-global"> <span class="button-global__title">Get consultation</span></button>
-            </li>
-            <li>
-              <div class="login">
-                <div class="login__icon"><img src="./img/navbar/Profile.svg" alt="login icon"></div><a class="login__link" href="#"><span class="login__title">Log in</span></a><span class="login__slash">&nbsp;/&nbsp; </span><a class="login__link" href="#"> <span class="login__title">Register</span></a>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <?php
+          include('nav.php');
+        ?>
       </div>
       <div class="container container-flex header-middle-margin">
         <div class="container-column cc-size">
@@ -455,74 +431,8 @@
         <button class="button-global"><span class="button-global__title">Subscribe</span></button>
       </form>
     </section>
-    <footer class="footer"> 
-      <div class="container">
-        <div class="footer-top"> 
-          <div class="footer-top-column">
-            <div class="cc-wrap"><a class="footer-top-column__title" href="#"><img class="footer-top-column__image" src="./img/footer/logo.svg" alt="logo button"></a></div>
-            <div class="cc-wrap">
-              <p class="footer-text">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.</p>
-            </div>
-            <ul class="cc-wrap cc-footer-flex"> 
-              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/facebook.svg" alt="facebook"></a></li>
-              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/twitter.svg" alt="twitter"></a></li>
-              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/youtube.svg" alt="youtube"></a></li>
-              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/telegram.svg" alt="telegram"></a></li>
-              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/instagram.svg" alt="instagram"></a></li>
-              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/linkedin.svg" alt="linkedin"></a></li>
-            </ul>
-          </div>
-          <ul class="footer-top-column">
-            <li> 
-              <h6 class="footer-top-column__title">Site Map</h6>
-            </li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">About Us    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Courses    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Events    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Blog    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Contacts    </span></a></li>
-          </ul>
-          <ul class="footer-top-column">
-            <li> 
-              <h6 class="footer-top-column__title">COURSES</h6>
-            </li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Marketing    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Management    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">HR & Recruting    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Design    </span></a></li>
-            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Development    </span></a></li>
-          </ul>
-          <ul class="footer-top-column">
-            <li> 
-              <h6 class="footer-top-column__title">CONTACT US</h6>
-            </li>
-            <li> <a class="footer-top-column__link" href="tel: 4055550128"><img class="footer-top-column__img" src="./img/footer/iPhone.svg" alt="phone"><span class="footer-top-column__description">(405) 555-0128    </span></a></li>
-            <li> <a class="footer-top-column__link" href="mailto: hello@createx.com"><img class="footer-top-column__img" src="./img/footer/Mail.svg" alt="mail"><span class="footer-top-column__description">hello@createx.com</span></a></li>
-          </ul>
-          <ul class="footer-top-column">
-            <li> 
-              <h6 class="footer-top-column__title">SIGN UP TO OUR NEWSLETTER</h6>
-            </li>
-            <li> 
-              <div class="container-input"> 
-                <input class="container-input__add" type="text" placeholder="Email address">
-                <button class="container-input__btn" type="button"><img class="container-input__img" src="./img/input/Right.svg" alt="arrow"></button>
-              </div>
-            </li>
-            <li> 
-              <p class="footer-top-column__description">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.    </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <div class="footer-bottom">
-      <div class="container container-flex">
-        <div class="container-text">
-          <h6 class="footer-bottom__title">© All rights reserved. Made with </h6><img class="footer-bottom__img" src="./img/footer/Heart.svg" alt="heart">
-          <h6 class="footer-bottom__title">by Createx Studio </h6>
-        </div><a class="footer-bottom__link" href="#">Go to top</a>
-      </div>
-    </div>
+    <?php
+      include('footer.php');
+    ?>
   </body>
 </html>

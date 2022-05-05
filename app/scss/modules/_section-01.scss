@@ -58,3 +58,19 @@
     @include font-lato(900, 46px, $color-dark);
     margin-bottom: 46px;
 }
+
+
+@media screen and (max-width: 1440px){
+    .section-01 {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .section-01 {
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

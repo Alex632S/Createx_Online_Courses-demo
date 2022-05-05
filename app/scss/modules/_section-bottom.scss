@@ -9,8 +9,7 @@
     background-size: contain;
     .section-01-cc__decription {
         max-width: 810px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto;margin-right: auto;
     }
     .container-form {
         padding-top: 14px;
@@ -34,5 +33,34 @@
     .container-form__input[type="text"] {
         @include font-lato(400, 16px, $color-grey-dark-03);
         padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-bottom {
+        background-image: none;
+    }
+}
+@media screen and (max-width: 620px) {
+    .container-form {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .section-bottom {
+        padding-left: 15px;
+        padding-right: 15px;
+        .container-form {
+            width: 100%;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+        }
+        .button-global {
+            width: 100%;
+        }
+        .container-form__input {
+            margin: 0;
+        }
     }
 }

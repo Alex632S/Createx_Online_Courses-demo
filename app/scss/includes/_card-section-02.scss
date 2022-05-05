@@ -59,3 +59,37 @@
 .content-card__mark-blue-02 {
     background: $color-blue-02;
 }
+
+@media screen and (max-width: 680px){
+    .card-section-02 {
+        width: 100%;
+    }
+    .content-card {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 660px){
+    .content-card {
+        height: auto;
+        padding: 0 0 0 10px;
+    }
+    .content-cost-flex {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .content-cost {
+        .content-cost__description:nth-child(2) {
+            display: none;
+        }
+    }
+    .image-card {
+        &__img {
+            width: calc(214 / 660 * 100vw);
+            height: 100%;
+        }
+    }
+    .content-card__mark {
+        display: none;
+    }
+}
