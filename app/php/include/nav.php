@@ -1,7 +1,7 @@
 <div class="header-row"> 
    <ul class="header-nav">
       <a class="header-nav__logo" href="index.php"><img class="header-nav__image" src="./img/navbar/logo.svg" alt="logo button"></a>
-      <li> <a class="header-nav__link" href="about.php"><span class="header-nav__title">About Us</span></a></li>
+      <li> <a class="header-nav__link" href="course.php"><span class="header-nav__title">About Us</span></a></li>
       <li> <a class="header-nav__link" href="courses.php"><span class="header-nav__title">Courses</span></a></li>
       <li> <a class="header-nav__link" href="events.php"><span class="header-nav__title">Events</span></a></li>
       <li> <a class="header-nav__link" href="blog.php"><span class="header-nav__title">Blog</span></a></li>

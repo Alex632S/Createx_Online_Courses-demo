@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php
-    include('head.php');
+    include('php/include/head.php');
   ?>
   <body class="page__body">
     <header class="menu-wrap">
       <div class="container">
         <?php
-          include('nav.php');
+          include('php/include/nav.php');
         ?>
       </div>
     </header>
@@ -182,7 +182,7 @@
       </form>
     </section>
     <?php
-      include('footer.php');
+      include('php/include/footer.php');
     ?>
   </body>
 </html>
