@@ -14,3 +14,11 @@
 .container-row-padding {
     margin-top: 14px;
 }
+@media screen and (max-width: 1100px) {
+    .section-02 {
+        padding: 0 0 80px 0;
+        .content-card__description {
+            margin: 10px 0;
+        }
+    }
+}

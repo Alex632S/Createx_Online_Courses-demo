@@ -60,9 +60,27 @@
 }
 
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1260px){
     .section-01 {
         background-image: none;
+        .footer-top-column__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-01-cc__text {
+           text-align: center;
+        }
+        .cc-wrap-flex {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+}
+@media screen and (max-width: 1100px){
+    .section-01 {
+        padding: 50px 0 80px 0;
     }
 }
 
@@ -71,6 +89,12 @@
         .banner {
             width: 100%;
             height: auto;
+        }
+    }
+    .section-01-cc {
+        li:last-child {
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

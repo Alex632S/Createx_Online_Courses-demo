@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <?php
-    include('php/include/head.php');
-  ?>
+  <head class="page__head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Createx Online Courses</title>
+  </head>
   <body class="page__body"> 
     <header class="header"> 
       <div class="container">
-        <?php
-          include('php/include/nav.php');
-        ?>
+        <div class="header-row-min">
+          <div class="burger"> 
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="header-row"> 
+          <ul class="header-nav"> <a class="header-nav__logo" href="#"><img class="header-nav__image" src="./img/navbar/logo.svg" alt="logo button"></a>
+            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">About Us</span></a></li>
+            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Courses</span></a></li>
+            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Events</span></a></li>
+            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Blog</span></a></li>
+            <li> <a class="header-nav__link" href="#"><span class="header-nav__title">Contacts</span></a></li>
+          </ul>
+          <ul class="header-cta"> 
+            <li>
+              <button class="button-global"> <span class="button-global__title">Get consultation</span></button>
+            </li>
+            <li>
+              <div class="login">
+                <div class="login__icon"><img src="./img/navbar/Profile.svg" alt="login icon"></div><a class="login__link" href="#"><span class="login__title">Log in</span></a><span class="login__slash">&nbsp;/&nbsp; </span><a class="login__link" href="#"> <span class="login__title">Register</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="box-min">
         <div class="container container-flex header-middle-margin">
@@ -27,7 +58,7 @@
                 <button class="button-global-opacity"> <span class="button-global-opacity__title">About us</span></button>
               </li>
               <li> 
-                <button class="button-global" onclick="document.location='courses.php'"> <span class="button-global__title">Explore courses</span></button>
+                <button class="button-global"> <span class="button-global__title">Explore courses</span></button>
               </li>
             </ul>
           </div>
@@ -73,27 +104,27 @@
             </li>
             <li>
               <div class="footer-top-column__link"><span class="section-01-cc-inner"><img class="section-01-cc__img" src="./img/section-01/check.svg" alt="bullet"></span>
-                <p class="section-01-cc__text">A fermentum in morbi pretium aliquam adipiscing donec tempus.</p>
+                <p class="section-01-cc__text">A fermentum in morbi pretium aliquam adipiscing donec tempus.                </p>
               </div>
             </li>
             <li>
               <div class="footer-top-column__link"><span class="section-01-cc-inner"><img class="section-01-cc__img" src="./img/section-01/check.svg" alt="bullet"></span>
-                <p class="section-01-cc__text">Vulputate placerat amet pulvinar lorem nisl.</p>
+                <p class="section-01-cc__text">Vulputate placerat amet pulvinar lorem nisl.                </p>
               </div>
             </li>
             <li>
               <div class="footer-top-column__link"><span class="section-01-cc-inner"><img class="section-01-cc__img" src="./img/section-01/check.svg" alt="bullet"></span>
-                <p class="section-01-cc__text">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p>
+                <p class="section-01-cc__text">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.                  </p>
               </div>
             </li>
             <li>
               <div class="footer-top-column__link"><span class="section-01-cc-inner"><img class="section-01-cc__img" src="./img/section-01/check.svg" alt="bullet"></span>
-                <p class="section-01-cc__text">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+                <p class="section-01-cc__text">Etiam duis lobortis in fames ultrices commodo nibh.                   </p>
               </div>
             </li>
             <li>
               <div class="footer-top-column__link"><span class="section-01-cc-inner"><img class="section-01-cc__img" src="./img/section-01/check.svg" alt="bullet"></span>
-                <p class="section-01-cc__text">Tincidunt sagittis neque sem ac eget.</p>
+                <p class="section-01-cc__text">Tincidunt sagittis neque sem ac eget.                  </p>
               </div>
             </li>
             <li>
@@ -116,7 +147,7 @@
               <h3 class="section-01-cc__title">Ready to learn?</h3>
               <p class="section-01-cc__decription">Featured Courses</p>
             </div>
-            <button class="button-global-opacity" onclick="document.location='courses.php'"><span class="button-global-opacity__title">View all courses</span></button>
+            <button class="button-global-opacity"><span class="button-global-opacity__title">View all courses</span></button>
           </div>
           <div class="container-row container-row-padding">
             <div class="card-section-02">
@@ -155,22 +186,14 @@
               <div class="image-card"><img class="image-card__img" src="./img/card/image-05.jpg" alt="person"></div>
               <div class="content-card"><span class="content-card__mark content-card__mark-blue">Management</span>
                 <h4 class="content-card__description">Business Development Management</h4>
-                <div class="content-cost content-cost-flex">
-                  <span class="content-cost__value">$400</span>
-                  <span class="content-cost__description">&nbsp;|&nbsp;</span>
-                  <span class="content-cost__description">by Dianne Russell</span>
-                </div>
+                <div class="content-cost content-cost-flex"><span class="content-cost__value">$400</span><span class="content-cost__description">&nbsp;|&nbsp;</span><span class="content-cost__description">by Dianne Russell</span></div>
               </div>
             </div>
             <div class="card-section-02">
               <div class="image-card"><img class="image-card__img" src="./img/card/image-06.jpg" alt="person"></div>
               <div class="content-card"><span class="content-card__mark content-card__mark-red-02">Design</span>
                 <h4 class="content-card__description">Graphic Design Basic</h4>
-                <div class="content-cost content-cost-flex"> 
-                  <span class="content-cost__value">$500</span>
-                  <span class="content-cost__description">&nbsp;|&nbsp;</span>
-                  <span class="content-cost__description">by Guy Hawkins</span>
-                </div>
+                <div class="content-cost content-cost-flex"> <span class="content-cost__value">$500</span><span class="content-cost__description">&nbsp;|&nbsp;</span><span class="content-cost__description">by Guy Hawkins</span></div>
               </div>
             </div>
           </div>
@@ -195,9 +218,7 @@
               <button class="list-categorys__btn"> <span class="list-categorys__description list-categorys__library"> 24/7 Online Library</span></button>
             </li>
             <li>
-              <button class="list-categorys__btn"> 
-                <span class="list-categorys__description list-categorys__community">Community</span>
-              </button>
+              <button class="list-categorys__btn"> <span class="list-categorys__description list-categorys__community"> Community</span></button>
             </li>
           </ul>
           <div class="section-03-bottom container-flex">
@@ -205,9 +226,7 @@
               <h4 class="container-description__title">Only practicing tutors</h4>
               <p class="container-description__text">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
             </div>
-            <div class="container-image"> 
-              <img class="container-image__img" src="./img/section-03/learn.svg" alt="people learn">
-            </div>
+            <div class="container-image"> <img class="container-image__img" src="./img/section-03/learn.svg" alt="people learn"></div>
           </div>
         </div>
       </div>
@@ -266,7 +285,7 @@
               <h5 class="section-04-row__title">Do you want more?</h5>
             </li>
             <li> 
-              <button class="button-global" onclick="document.location='events.php'"> <span class="button-global__title">Explore all events</span></button>
+              <button class="button-global"> <span class="button-global__title">Explore all events</span></button>
             </li>
           </ul>
         </div>
@@ -371,7 +390,7 @@
             <h3 class="section-01-cc__title">Our blog</h3>
             <p class="section-01-cc__decription">Latest posts</p>
           </div>
-          <button class="button-global" onclick="document.location='blog.php'"><span class="button-global__title">Go to blog</span></button>
+          <button class="button-global"><span class="button-global__title">Go to blog</span></button>
         </div>
         <div class="heading-container container-flex">
           <div class="heading heading-01">
@@ -445,9 +464,75 @@
         <button class="button-global"><span class="button-global__title">Subscribe</span></button>
       </form>
     </section>
-    <?php
-      include('php/include/footer.php');
-    ?>
-    <script src="js/main.min.js"></script>
+    <footer class="footer"> 
+      <div class="container">
+        <div class="footer-top"> 
+          <div class="footer-top-column">
+            <div class="cc-wrap"><a class="footer-top-column__title" href="#"><img class="footer-top-column__image" src="./img/footer/logo.svg" alt="logo button"></a></div>
+            <div class="cc-wrap">
+              <p class="footer-text">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.</p>
+            </div>
+            <ul class="cc-wrap cc-footer-flex"> 
+              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/facebook.svg" alt="facebook"></a></li>
+              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/twitter.svg" alt="twitter"></a></li>
+              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/youtube.svg" alt="youtube"></a></li>
+              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/telegram.svg" alt="telegram"></a></li>
+              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/instagram.svg" alt="instagram"></a></li>
+              <li><a class="footer__link" href="#"> <img class="footer__img" src="./img/footer/linkedin.svg" alt="linkedin"></a></li>
+            </ul>
+          </div>
+          <ul class="footer-top-column">
+            <li> 
+              <h6 class="footer-top-column__title">Site Map</h6>
+            </li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">About Us    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Courses    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Events    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Blog    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Contacts    </span></a></li>
+          </ul>
+          <ul class="footer-top-column">
+            <li> 
+              <h6 class="footer-top-column__title">COURSES</h6>
+            </li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Marketing    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Management    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">HR & Recruting    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Design    </span></a></li>
+            <li> <a class="footer-top-column__link" href="#"><span class="footer-top-column__description">Development    </span></a></li>
+          </ul>
+          <ul class="footer-top-column">
+            <li> 
+              <h6 class="footer-top-column__title">CONTACT US</h6>
+            </li>
+            <li> <a class="footer-top-column__link" href="tel: 4055550128"><img class="footer-top-column__img" src="./img/footer/iPhone.svg" alt="phone"><span class="footer-top-column__description">(405) 555-0128    </span></a></li>
+            <li> <a class="footer-top-column__link" href="mailto: hello@createx.com"><img class="footer-top-column__img" src="./img/footer/Mail.svg" alt="mail"><span class="footer-top-column__description">hello@createx.com</span></a></li>
+          </ul>
+          <ul class="footer-top-column">
+            <li> 
+              <h6 class="footer-top-column__title">SIGN UP TO OUR NEWSLETTER</h6>
+            </li>
+            <li> 
+              <div class="container-input"> 
+                <input class="container-input__add" type="text" placeholder="Email address">
+                <button class="container-input__btn" type="button"><img class="container-input__img" src="./img/input/Right.svg" alt="arrow"></button>
+              </div>
+            </li>
+            <li> 
+              <p class="footer-top-column__description">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.    </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <div class="container container-flex">
+        <div class="container-text">
+          <h6 class="footer-bottom__title">© All rights reserved. Made with </h6><img class="footer-bottom__img" src="./img/footer/Heart.svg" alt="heart">
+          <h6 class="footer-bottom__title">by Createx Studio </h6>
+        </div><a class="footer-bottom__link" href="#">Go to top</a>
+      </div>
+    </div>
+    <script src="js/main.min.js"> </script>
   </body>
 </html>

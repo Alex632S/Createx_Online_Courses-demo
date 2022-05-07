@@ -132,3 +132,9 @@
     width: 24px;
     height: 24px;
 }
+
+@media screen and (max-width: 480px){
+    .heading {
+        width: 100%;
+    }
+}

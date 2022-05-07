@@ -16,9 +16,9 @@ html(lang="en")
       header.header 
          //- navigatioin header
          include modules/navigation-line.pug
-
-         //- header middle block   
-         include modules/header-middle.pug
+         .box-min
+            //- header middle block   
+            include modules/header-middle.pug
 
          //- header bottom block   
          include modules/header-bottom.pug
@@ -52,5 +52,7 @@ html(lang="en")
       
       //- footer
       include modules/footer.pug
+
+      script(src="js/main.min.js") 
 
 
