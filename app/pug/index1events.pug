@@ -1,0 +1,58 @@
+//- HOME PAGE
+doctype html
+html(lang="en")
+   head.page__head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible" content="IE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      link(rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png")
+      link(rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png")
+      link(rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png")
+      link(rel="manifest" href="./img/favicon_io/site.webmanifest")
+      link(rel="stylesheet" href="./css/style.min.css")
+      title Createx Online Courses
+
+   body.page__body 
+      header.header 
+         //- navigatioin header
+         include modules/navigation-line.pug
+         .box-min
+            //- header middle block   
+            include modules/header-middle.pug
+
+         //- header bottom block   
+         include modules/header-bottom.pug
+
+      //- section-01 block
+      include modules/section-01.pug
+
+      //- section-02 block
+      include modules/section-02.pug
+      
+      //- section-03 block
+      include modules/section-03.pug
+
+      //- section-04 block
+      include modules/section-04.pug
+
+      //- section-05 block
+      include modules/section-05.pug
+
+      //- slider block
+      include modules/slider.pug
+
+      //- slider-single block
+      include modules/slider-single.pug
+
+      //- blog block
+      include modules/blog.pug
+
+      //- section-bottom block
+      include modules/section-bottom.pug
+      
+      //- footer
+      include modules/footer.pug
+
+      script(src="js/main.min.js") 
+
+
